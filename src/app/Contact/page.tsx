@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const FeaturesSection = () => (
@@ -44,9 +45,9 @@ const ContactPage = () => {
       >
         <h1 className="text-4xl font-bold text-black">Contact Us</h1>
         <nav className="mt-2 text-sm text-gray-600">
-          <a href="/" className="hover:text-gray-800">
+          <Link href="/" className="hover:text-gray-800">
             Home
-          </a>{" "}
+          </Link>{" "}
           <span>&gt;</span>{" "}
           <span className="text-black font-medium">Contact Us</span>
         </nav>
@@ -226,7 +227,7 @@ const ContactPage = () => {
                     id="message"
                     name="message"
                     className="p-3 border border-gray-300 rounded-md mt-1"
-                    rows="5"
+                    rows={5}
                     required
                   />
                 </div>

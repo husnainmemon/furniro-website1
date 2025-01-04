@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const ShopPage = () => {
@@ -10,9 +11,9 @@ const ShopPage = () => {
       >
         <h1 className="text-4xl font-bold text-gray-800">Shop</h1>
         <nav className="mt-2 text-sm text-gray-600">
-          <a href="/" className="hover:text-gray-800">
+          <Link href="/" className="hover:text-gray-800">
             Home
-          </a>{" "}
+          </Link>{" "}
           <span>&gt;</span>{" "}
           <span className="text-gray-800 font-medium">Shop</span>
         </nav>
